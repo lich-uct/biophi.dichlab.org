@@ -1,0 +1,13 @@
+[Unit]
+Description=BioPhi Celery worker
+After=network.target
+
+[Service]
+User=biophi
+Group=www-data
+WorkingDirectory=/home/biophi/run
+ExecStart=/opt/biophi/celery/celery.sh
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve BioPhi backend
+After=network.target
+
+[Service]
+User=biophi
+Group=www-data
+WorkingDirectory=/home/biophi/run
+ExecStart=/opt/biophi/gunicorn/gunicorn.sh
+
+[Install]
+WantedBy=multi-user.target
+
