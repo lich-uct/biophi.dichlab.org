@@ -1,7 +1,10 @@
 #!/bin/bash
+# Run Celery worker service
 
+# Exit on first error
 set -e
 
+# Activate conda env and set ENV vars
 source /opt/biophi/activate.sh
 
 celery \

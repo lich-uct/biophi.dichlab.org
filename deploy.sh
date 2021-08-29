@@ -1,4 +1,6 @@
 #!/bin/bash
+# Deploy latest version
+# Pulls latest changes from GitHub and restarts the services
 
 set -ex
 
