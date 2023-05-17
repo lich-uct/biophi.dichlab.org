@@ -119,6 +119,8 @@ systemctl enable biophi-gunicorn
 systemctl status biophi-gunicorn
 ```
 
+See flask gunicorn log using: `journalctl -u biophi-gunicorn.service -e`
+
 ### Set up celery service
 
 Check the local celery worker config and adjust as needed: 
@@ -141,6 +143,8 @@ systemctl enable biophi-celery
 # Check the status of celery
 systemctl status biophi-celery
 ```
+
+See celery task log using: `journalctl -u biophi-celery.service -e`
 
 ## Set up nginx
 
