@@ -80,7 +80,7 @@ Then, add conda to your PATH and run `conda init`.
 
 ```bash
 # Create the BioPhi conda environment
-conda create -n biophi python=3.8
+conda create -n biophi python=3.9
 conda activate biophi
 
 # Install BioPhi and dependencies from Bioconda channel
